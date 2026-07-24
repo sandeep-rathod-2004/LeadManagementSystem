@@ -1,21 +1,33 @@
 # Lead Management System
 
-A full-stack Lead Management System built using FastAPI, React.js, and SQLAlchemy. It allows organizations to manage customer leads, assign them to team members, track activities, and monitor progress through an intuitive dashboard.
+A full-stack **Lead Management System** built with **FastAPI**, **React.js**, and **PostgreSQL**. It enables organizations to efficiently manage customer leads, assign them to team members, track activities, and monitor progress through an intuitive dashboard.
 
-## Features
+## 🚀 Live Demo
 
-- JWT Authentication
+- **Frontend:** https://lead-management-system-virid-zeta.vercel.app
+- **Backend API:** https://leadmanagementsystem-8z6z.onrender.com
+- **API Documentation:** https://leadmanagementsystem-8z6z.onrender.com/docs
+
+---
+
+## ✨ Features
+
+- Secure JWT Authentication
 - Role-Based Access Control (Admin & Member)
+- User Registration & Login
 - Lead CRUD Operations
 - Lead Assignment
 - Notes Management
 - Activity Logging
 - Dashboard with Statistics
-- Search and Filtering
+- Search & Filtering
 - Pagination
 - Responsive User Interface
+- PostgreSQL Database Integration
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
 - React.js
@@ -27,14 +39,22 @@ A full-stack Lead Management System built using FastAPI, React.js, and SQLAlchem
 ### Backend
 - FastAPI
 - SQLAlchemy
-- JWT Authentication
+- JWT Authentication (python-jose)
 - Passlib (bcrypt)
+- Pydantic
 
 ### Database
+- PostgreSQL (Production)
 - SQLite (Development)
-- PostgreSQL (Recommended for Production)
 
-## Project Structure
+### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: Render PostgreSQL
+
+---
+
+## 📁 Project Structure
 
 ```text
 LeadManagementSystem/
@@ -49,15 +69,32 @@ LeadManagementSystem/
 └── README.md
 ```
 
-## Getting Started
+---
+
+## ⚙️ Local Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/sandeep-rathod-2004/LeadManagementSystem.git
+cd LeadManagementSystem
+```
 
 ### Backend
 
 ```bash
 cd backend
+
 python -m venv venv
+
+# Windows
 venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 ```
 
@@ -65,28 +102,58 @@ uvicorn app.main:app --reload
 
 ```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
 
-## API Documentation
+---
 
-After starting the backend, open:
+## 📖 API Documentation
+
+Run the backend locally and open:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-## Future Improvements
+Production API Docs:
 
-- PostgreSQL support
-- Docker deployment
-- Email notifications
-- CSV import/export
-- Unit testing
+```
+https://leadmanagementsystem-8z6z.onrender.com/docs
+```
 
-## Author
+---
+
+## 🔒 Authentication
+
+The application uses **JWT (JSON Web Tokens)** for secure authentication.
+
+Roles supported:
+
+- Admin
+- Member
+
+Admins can manage users and assign leads, while Members can manage their assigned leads.
+
+---
+
+## 📌 Future Improvements
+
+- Email Notifications
+- CSV Import/Export
+- File Attachments for Leads
+- Advanced Analytics Dashboard
+- Docker Support
+- Unit & Integration Testing
+- CI/CD Pipeline
+
+---
+
+## 👨‍💻 Author
 
 **Sandeep Rathod**
 
 GitHub: https://github.com/sandeep-rathod-2004
+
