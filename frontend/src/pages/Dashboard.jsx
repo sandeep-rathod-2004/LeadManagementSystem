@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 import API from "../services/api";
 
 function Dashboard() {
@@ -92,6 +93,8 @@ function Dashboard() {
 
             </div>
           )}
+
+          <Footer />
 
         </div>
       </div>
